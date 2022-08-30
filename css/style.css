@@ -160,11 +160,11 @@ a:hover {
 /*=======MAIN*/
 
 .content-row {
-    padding: 65px 0;
+    padding: 60px 0;
 }
 
 .content-title {
-    margin: 0 0 45px;
+    margin: 0 0 30px;
     font-family: "Open Sans Bold", sans-serif;
     font-size: 20px;
     text-align: center;
@@ -176,7 +176,7 @@ a:hover {
     display: block;
     width: 66px;
     height: 3px;
-    margin: 20px auto 0;
+    margin: 10px auto 0;
     background-color: #b59f5b;
 }
 
@@ -188,7 +188,30 @@ a:hover {
 
 .trend-item {
     position: relative;
+    display: flex;
+    align-items: flex-end;
     width: calc(100%/4 - 5px);
+    min-height: 320px;
+    padding: 15px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trend-img-1 {
+    background-image: url("../images/trend1.jpg");
+}
+
+.trend-img-2 {
+    background-image: url("../images/trend2.jpg");
+}
+
+.trend-img-3 {
+    background-image: url("../images/trend3.jpg");
+}
+
+.trend-img-4 {
+    background-image: url("../images/trend4.jpg");
 }
 
 .trend-item::after {
@@ -202,15 +225,9 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.trend-img {
-    width: 100%;
-}
-
 .trend-content {
-    position: absolute;
-    left: 25px;
-    right: 25px;
-    bottom: 15px;
+    position: relative;
+    width: 100%;
     padding: 30px;
     border: 3px solid rgba(181, 159, 91, 0.6);
     z-index: 1;
@@ -276,8 +293,8 @@ a:hover {
 
 .post-img {
     display: block;
-    width: 380px;
-    height: 295px;
+    flex: 1 0 380px;
+    min-height: 295px;
     margin-right: 30px;
     background-color: #eee;
 }
@@ -366,7 +383,7 @@ a:hover {
 }
 
 .sidebar-title {
-    margin: 0 0 45px;
+    margin: 0 0 28px;
     font-family: "Open Sans Bold", sans-serif;
     font-size: 14px;
     text-align: center;
@@ -378,7 +395,7 @@ a:hover {
     display: block;
     width: 66px;
     height: 3px;
-    margin: 20px auto 0;
+    margin: 13px auto 0;
     background-color: #b59f5b;
 }
 
@@ -436,11 +453,11 @@ a:hover {
 
 .search {
     display: flex;
-    margin: 60px 0 0;
+    margin: 62px 0 0;
 }
 
 .search-input {
-    width: 223px;
+    width: 100%;
     height: 48px;
     padding: 0 20px;
     border: none;
@@ -454,7 +471,7 @@ a:hover {
 }
 
 .search-button {
-    width: 48px;
+    width: 58px;
     height: 48px;
     border: none;
     background-image: url("../svg/search.svg");
@@ -491,7 +508,7 @@ a:hover {
 
 .subscription-button {
     width: 100%;
-    height: 48px;
+    min-height: 48px;
     padding: 15px;
     border: none;
     text-transform: uppercase;
@@ -535,7 +552,7 @@ a:hover {
 }
 
 .topic-item {
-    padding: 13px 0;
+    padding: 14px 0;
     border-bottom: 1px solid #eee;
 }
 
@@ -572,30 +589,32 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: calc(100%/3 - 40px);
+    margin-bottom: -28px;
 }
 
 .product-img {
     display: block;
     margin: 0 auto;
+    background-color: #eee;
 }
 
 .product-body {
     position: relative;
     top: -30px;
     flex: 1 0 auto;
-    padding: 50px 20px 20px;
+    padding: 50px 20px 25px;
     border: 3px solid #b59f5b;
 }
 
 .product-title {
-    margin: 0 0 15px;
+    margin: 0 0 8px;
     font-family: "Open Sans Bold", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
 }
 
 .product-text {
-    margin: 0 0 20px;
+    margin: 0 0 28px;
     font-size: 15px;
     line-height: 20px;
 }
@@ -612,7 +631,7 @@ a:hover {
 }
 
 .product-link {
-    padding: 15px;
+    padding: 18px 30px;
     text-transform: uppercase;
     font-family: "Open Sans Bold", sans-serif;
     font-size: 14px;
@@ -644,60 +663,50 @@ a:hover {
 }
 
 .social {
-    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    padding: 32px 10px;
     background-color: #eee;
 }
 
 .social-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    min-width: 200px;
 }
 
 .social-item {
-    margin: 0 0 0 75px;
+    width: 100%;
 }
 
 .social-item:hover {
     opacity: 0.7;
 }
 
-.social-item:first-child {
-    margin: 0;
-}
-
 .social-link {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
+    height: 20px;
 }
 
 .social-link-twitter {
-    width: 25px;
-    height: 20px;
     background-image: url("../svg/004-twitter.svg");
 }
 
 .social-link-pinterest {
-    width: 18px;
-    height: 20px;
     background-image: url("../svg/001-pinterest.svg");
 }
 
 .social-link-facebook {
-    width: 25px;
-    height: 20px;
     background-image: url("../svg/002-facebook-logo.svg");
 }
 
 .social-link-instagram {
-    width: 25px;
-    height: 20px;
     background-image: url("../svg/005-instagram.svg");
 }
 
 .social-link-tumblr {
-    width: 15px;
-    height: 20px;
     background-image: url("../svg/003-tumblr.svg");
 }
 
@@ -733,14 +742,14 @@ a:hover {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 395px;
-    padding: 55px 30px;
+    width: 390px;
+    padding: 53px 30px 55px;
     margin: auto;
     background-color: #fff;
 }
 
 .feedback-title {
-    margin: 0 0 45px;
+    margin: 0 0 28px;
     font-family: "Open Sans Bold", sans-serif;
     font-size: 20px;
     text-align: center;
@@ -752,7 +761,7 @@ a:hover {
     display: block;
     width: 66px;
     height: 3px;
-    margin: 20px auto 0;
+    margin: 8px auto 0;
     background-color: #b59f5b;
     opacity: 0.4;
 }
@@ -819,6 +828,10 @@ a:hover {
     font-size: 13px;
 }
 
+.feedback-textarea {
+    resize: none;
+}
+
 .feedback-textarea::placeholder {
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
@@ -860,17 +873,26 @@ a:hover {
 }
 
 @media (max-width: 1200px) {
+    .container {
+        padding: 0 35px;
+    }
     .header-content {
         min-height: 390px;
         background-image: url("../images/banner-bg-tablet.jpg");
+    }
+    .header-top {
+        padding: 40px 0 25px;
+    }
+    .logo-link {
+        width: 158px;
     }
     .nav-list {
         display: none;
     }
     .nav-button {
         display: block;
-        width: 1.4em;
-        height: 1em;
+        width: 25px;
+        height: 21px;
         border: none;
         padding: 0;
         background-color: transparent;
@@ -883,8 +905,7 @@ a:hover {
     .nav-button:after {
         content: "";
         width: 100%;
-        height: 20%;
-        border-radius: 5px;
+        height: 3px;
         background-color: #ffffff;
         position: absolute;
         left: 0;
@@ -897,55 +918,169 @@ a:hover {
     }
     .nav-button-label {
         width: 100%;
-        height: 20%;
-        margin-top: -0.1em;
-        border-radius: 5px;
+        height: 3px;
+        margin-top: -2px;
         background-color: #ffffff;
         position: absolute;
         left: 0;
         top: 50%;
+    }
+    .header-title {
+        font-size: 40px;
+        line-height: 55px;
+        padding: 65px 0;
+    }
+    .content-row {
+        padding: 48px 0;
+    }
+    .content-title {
+        margin: 0 0 20px;
     }
     .trend {
         gap: 3px;
     }
     .trend-item {
         width: calc(100%/2 - 3px/2);
+        min-height: 247px;
+    }
+    .trend-title-link {
+        font-size: 17px;
+        line-height: 22px;
     }
     .main-content {
-        max-width: 50%;
+        max-width: 56%;
+        padding: 0 0 23px;
     }
     .post {
+        position: relative;
         flex-direction: column;
+        margin: 70px 0 0;
+    }
+    .post::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -28px;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #f4f7f6;
     }
     .post-img {
+        flex: 1 0 305px;
         margin: 0 0 15px;
+    }
+    .post-info {
+        margin: 0 0 29px;
+    }
+    .post-title {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .products {
+        gap: 20px 0;
     }
     .product-item {
         display: flex;
         flex-direction: column;
         width: calc(100%/2 - 20px);
     }
+    .copyright-link {
+        padding: 48px 0 40px;
+    }
 }
 
 @media (max-width: 1200px) and (orientation: landscape) {}
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
     .header-content {
+        position: relative;
         min-height: 640px;
         background-image: url("../images/banner-mobile.jpg");
+    }
+    .header-top {
+        display: flex;
+        justify-content: flex-end;
+        padding: 30px 0 20px;
+    }
+    .logo-link {
+        position: absolute;
+        top: 225px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 270px;
+    }
+    .header-title {
+        font-size: 26px;
+        line-height: 36px;
+        padding: 248px 0 30px;
+    }
+    .content-row {
+        padding: 40px 0;
+    }
+    .content-title {
+        font-size: 16px;
+        margin: 0 0 25px;
     }
     .trend {
         gap: 3px;
     }
     .trend-item {
         width: 100%;
+        min-height: 231px;
+    }
+    .trend-title-link {
+        font-size: 16px;
+        line-height: 20px;
     }
     .main-content {
         max-width: 100%;
+        padding: 0;
+    }
+    .post {
+        position: relative;
+        flex-direction: column;
+        margin: 41px 0 0;
+    }
+    .post::after {
+        bottom: -5px;
+        height: 2px;
+    }
+    .post-img {
+        flex: 1 0 auto;
+        min-height: 260px;
+    }
+    .post-anchors {
+        margin: 0 0 8px;
+    }
+    .post-info {
+        margin: 0 0 15px;
+    }
+    .post-title-link {
+        margin: 0 0 20px;
+    }
+    .post-title {
+        font-size: 16px;
+        line-height: 20px;
     }
     .sidebar {
         width: 100%;
-        padding: 60px 0 0;
+    }
+    .sidebar-block:first-child {
+        margin: 65px 0 0;
+    }
+    .sidebar-block {
+        margin: 43px 0 0;
+    }
+    .sidebar-title {
+        font-size: 16px;
+    }
+    .products {
+        gap: 13px 0;
     }
     .product-item {
         width: 100%;
