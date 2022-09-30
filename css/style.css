@@ -25,7 +25,8 @@
 
 body {
     margin: 0;
-    font-family: "Open Sans Regular", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
     line-height: 1;
     color: #0f0d0e;
 }
@@ -165,8 +166,8 @@ a:hover {
 
 .content-title {
     margin: 0 0 30px;
-    font-family: "Open Sans Bold", sans-serif;
     font-size: 20px;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
 }
@@ -248,7 +249,7 @@ a:hover {
 
 .trend-anchor-link {
     display: block;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
@@ -261,7 +262,7 @@ a:hover {
 
 .trend-title-link {
     display: block;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
@@ -319,7 +320,7 @@ a:hover {
 
 .post-anchor-link {
     display: block;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
@@ -343,7 +344,7 @@ a:hover {
 }
 
 .post-title {
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
@@ -359,7 +360,7 @@ a:hover {
 }
 
 .post-info-author {
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     margin: 0 0 0 15px;
     font-size: 12px;
     color: #000;
@@ -384,7 +385,7 @@ a:hover {
 
 .sidebar-title {
     margin: 0 0 28px;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
@@ -446,7 +447,7 @@ a:hover {
 }
 
 .new-post-title {
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 14px;
     line-height: 18px;
 }
@@ -563,7 +564,7 @@ a:hover {
 
 .topic-link {
     display: inline-block;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 14px;
     color: #000;
 }
@@ -574,7 +575,7 @@ a:hover {
 
 .topic-number {
     vertical-align: super;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 12px;
     color: #b59f5b;
 }
@@ -608,7 +609,7 @@ a:hover {
 
 .product-title {
     margin: 0 0 8px;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -633,7 +634,7 @@ a:hover {
 .product-link {
     padding: 18px 30px;
     text-transform: uppercase;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 14px;
     color: #fff;
     background-color: #b59f5b;
@@ -645,7 +646,7 @@ a:hover {
 }
 
 .product-prises {
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -750,7 +751,7 @@ a:hover {
 
 .feedback-title {
     margin: 0 0 28px;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -834,13 +835,14 @@ a:hover {
 
 .feedback-textarea::placeholder {
     font-family: "Open Sans", sans-serif;
+    font-weight: 400;
     font-size: 13px;
 }
 
 .feedback-button {
     padding: 15px;
     text-transform: uppercase;
-    font-family: "Open Sans Bold", sans-serif;
+    font-weight: 700;
     font-size: 14px;
     color: #fff;
     background-color: #b59f5b;
